@@ -4,14 +4,27 @@ import {useState} from "react";
 import {auth, googleProvider} from "../config/firebase-config";
 import { createUserWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 interface AuthProps {
-  // Define props here if there are any
+
 }
 
 export const Auth: React.FC<AuthProps> = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-      //console.log(auth?.currentUser?.email);// Use optional chaining to safely access email, prevent null
 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+      //console.log(auth?.currentUser?.email);// Use optional chaining to safely access email, prevent null
+  const validateForm = () => {
+    if (!email || !password) {
+        setError("Email and password are required");
+        return false;
+        }
+    if (!email.includes('@')) {
+        setError("Please enter a valid email");
+        return false;
+    }
+    setError("");
+    return true;
+};
   const signIn = async ()=> {
       try{
         await createUserWithEmailAndPassword(auth, email, password);
