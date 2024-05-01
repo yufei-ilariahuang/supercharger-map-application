@@ -34,19 +34,12 @@ export const Header: React.FC = () => {
           One Click
         </Typography>
         <form onSubmit={handleSubmit} style={{ display: 'flex', alignItems: 'center' }}>
-          <TextField
-            size="small"
-            placeholder="Search..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            variant="outlined"
-            sx={{ marginRight: 1, backgroundColor: 'background.paper' }}
-          />
+          
           <IconButton type="submit" color="inherit">
             {/* <SearchIcon /> */}
           </IconButton>
         </form>
-        <Button color="inherit" component={RouterLink} to="/Map">Home</Button>
+        <Button color="inherit" component={RouterLink} to="/Home">Home</Button>
         <Button color="inherit" component={RouterLink} to="/signin">Sign In</Button>
         <Button color="inherit" component={RouterLink} to="/">COLLECTIONS</Button>
       </Toolbar>

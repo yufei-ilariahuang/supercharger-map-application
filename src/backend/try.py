@@ -101780,14 +101780,14 @@ data_list = [
 
 if __name__ == "__main__":
     
-    # # Initialize Firebase Admin
-    # load_dotenv()  # Load environment variables from .env file
-    # print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))  # Should print the path to your JSON file
+    # Initialize Firebase Admin
+    load_dotenv()  # Load environment variables from .env file
+    print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))  # Should print the path to your JSON file
 
-    #     # Get the path from an environment variable
-    # key_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
-    # cred = credentials.Certificate(key_path)
-    # firebase_admin.initialize_app(cred)
+        # Get the path from an environment variable
+    key_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+    cred = credentials.Certificate(key_path)
+    firebase_admin.initialize_app(cred)
 
     
 
