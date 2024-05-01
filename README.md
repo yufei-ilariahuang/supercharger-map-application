@@ -1,46 +1,67 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Supercharger Map Application
 
-## Available Scripts
+## Description
+The Supercharger Map Application is a dynamic web application designed to help Tesla owners find supercharger stations worldwide. It provides real-time information on charger availability, types, and other amenities, enhancing the user experience with interactive maps and up-to-date data.
 
-In the project directory, you can run:
+## Key Features
+- **Real-Time Data**: View up-to-date information about loacations of tesla services.
+- **Interactive Maps**: Navigate a fully interactive map to explore supercharger locations.
+- **User Accounts**: Log in/out with email or google acocunts.
+- **Search and Filter**: Quickly find superchargers and other service stores of tesla by location around the world.
+- **Mobile Responsive**: Access the application smoothly on any device, thanks to a mobile-friendly design.
 
-### `npm start`
+## Built With
+- React - for building a dynamic and responsive UI.
+- TypeScript - for type-safe code and scalability.
+- Redux - for efficient state management across the application.
+- Material-UI (MUI) - for sleek and modern UI components.
+- Firebase - for real-time database management, authentication, and hosting.
+- Webpack - for asset bundling and optimization.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
+- Node.js
+- npm or Yarn
 
-### `npm test`
+### Demo
+Visit deployed version on firebase: [https://tesla-location-lia.web.app/Home]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://github.com/yufei-ilariahuang/supercharger-map-application/assets/129757476/f5c4e201-a85c-4050-a44f-d23fc9088271)
+![image](https://github.com/yufei-ilariahuang/supercharger-map-application/assets/129757476/b8273d2c-f3fe-4bbc-988b-5b647b2ac5ca)
+![image](https://github.com/yufei-ilariahuang/supercharger-map-application/assets/129757476/2782bc91-3f66-4db2-b5c2-d092056a7adc)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/yufei-ilariahuang/supercharger-map-application.git
+   ```
+2. Install NPM packages:
+   ```sh
+   cd supercharger-map-app
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Usage
+To run the application locally:
+```sh
+npm start
+```
+Navigate to `http://localhost:3000` to view the application in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
+Use Firebase Hosting:
+```sh
+npm run build
+firebase deploy
+``
 
-### `npm run eject`
+## License
+Distributed under the MIT License. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgements
+- Tesla for the inspiration behind this project.
+- All contributors who have participated in this project.
+```
