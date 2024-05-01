@@ -34,14 +34,6 @@ export const Header: React.FC = () => {
           One Click
         </Typography>
         <form onSubmit={handleSubmit} style={{ display: 'flex', alignItems: 'center' }}>
-          <TextField
-            size="small"
-            placeholder="Search..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            variant="outlined"
-            sx={{ marginRight: 1, backgroundColor: 'background.paper' }}
-          />
           <IconButton type="submit" color="inherit">
             {/* <SearchIcon /> */}
           </IconButton>
