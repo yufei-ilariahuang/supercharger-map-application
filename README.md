@@ -1,5 +1,5 @@
 
-# Supercharger Map Application
+# "One Click" Supercharger Map Application
 
 ## Description
 The Supercharger Map Application is a dynamic web application designed to help Tesla owners find supercharger stations worldwide. It provides real-time information on charger availability, types, and other amenities, enhancing the user experience with interactive maps and up-to-date data.
