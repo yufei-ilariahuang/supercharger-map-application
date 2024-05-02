@@ -17,14 +17,20 @@ const DocumentPage: React.FC = () => {
   useEffect(() => {
     if (collectionName && documentId) { // Ensure both parameters are defined
         const fetchData = async () => {
+          try {
             const docRef = doc(db, collectionName, documentId);
             const docSnapshot = await getDoc(docRef);
-
             if (docSnapshot.exists()) {
                 console.log("Document data:", docSnapshot.data());
-              } else {
+                setDocumentData(docSnapshot.data());
+            } else {
                 console.log("No such document!");
-              }
+                setDocumentData(null); // Optionally reset state or handle this case
+            }
+        } catch (error) {
+            console.error("Error fetching document:", error);
+            // Optionally set an error state here and display it
+        }
             };
 
     fetchData();
@@ -36,7 +42,7 @@ const DocumentPage: React.FC = () => {
   return (
     <Box sx={{ p: 2 }}>
       <Typography variant="h4" gutterBottom>
-        Document: {documentId}
+         {documentId?.replace(/_/g, ' ')}
       </Typography>
       <Paper elevation={3} sx={{ p: 2, mt: 2 }}>
         {documentData ? (

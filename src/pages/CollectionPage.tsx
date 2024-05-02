@@ -42,11 +42,11 @@ const CollectionPage: React.FC = () => {
   return (
     <Container component={Paper} elevation={6} sx={{ mt: 4, p: 3 }}>
       <Typography variant="h4" gutterBottom>
-        {collectionName?.replace(/_/g, ' ')}
+        {collectionName?.replace(/_/g, ' ')}a
       </Typography>
       <List>
         {documents.map(doc => (
-          <ListItem button component={RouterLink} to={`/collection/${collectionName?.replace(/_/g, ' ')}/document/${doc.id.replace(/_/g, ' ')}`} key={doc.id}>
+          <ListItem button component={RouterLink} to={`/collection/${collectionName}/document/${doc.id}`} key={doc.id}>
             <ListItemText 
               primary={doc.id.replace(/_/g, ' ')} 
               secondary={
