@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "homepage": "https://lia-tesla-collection.com",
+  "homepage": "https://myusername.github.io/my-app",
   "dependencies": {
     "@babel/core": "^7.24.5",
     "@babel/plugin-syntax-flow": "^7.24.1",
@@ -61,7 +61,6 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/leaflet": "^1.9.12",
-    "@types/lodash": "^4.17.0",
     "@types/react-router-dom": "^5.3.3"
   }
 }
